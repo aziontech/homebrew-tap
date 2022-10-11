@@ -17,10 +17,10 @@ brew install aziontech/tap/azioncli
 ```
 
 ## Issues
-If you encounter any non-security-related bug or unexpected behavior, please file an issue on the corresponding project repository (i.e. [https://github.com/aziontech/azion-cli/issues), not this one.
+If you encounter any non-security-related bug or unexpected behavior, please file an issue on the corresponding project repository (i.e. [Azion CLI](https://github.com/aziontech/azion-cli/issues)), not this one.
 
 ### Security issues
-The Azion team welcomes security reports and is committed to providing prompt attention to security issues. Security issues should be reported on the corresponding project repository (i.e. [https://github.com/aziontech/azion-cli/issues), not this one.
+The Azion team welcomes security reports and is committed to promptly addressing security issues. 
 
 ## License
 This project is licensed under the terms of the [MIT](LICENSE) license.
