@@ -5,15 +5,15 @@
 class Azioncli < Formula
   desc "The developer friendly way to interact with Azion"
   homepage "https://github.com/aziontech/azion-cli"
-  version "0.54.0"
+  version "0.55.0"
   license "MIT"
 
   depends_on "jq"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aziontech/azion-cli/releases/download/0.54.0/azioncli_0.54.0_Darwin_x86_64.tar.gz"
-      sha256 "8829194ea3a2c8973087c1d4b28c928e1a1057e5ce1e61eaccd7bbfe852289e3"
+      url "https://github.com/aziontech/azion-cli/releases/download/0.55.0/azioncli_0.55.0_Darwin_x86_64.tar.gz"
+      sha256 "b852d7f616333601fe5c9e9469b5e29314b73acbd96659153d71cc8ba6fde62d"
 
       def install
         bin.install "azioncli"
@@ -23,8 +23,8 @@ class Azioncli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aziontech/azion-cli/releases/download/0.54.0/azioncli_0.54.0_Darwin_arm64.tar.gz"
-      sha256 "ecfe9a45ffd4929d56af70e78ee8764442c23315998bbdccb137f6b36182b4b2"
+      url "https://github.com/aziontech/azion-cli/releases/download/0.55.0/azioncli_0.55.0_Darwin_arm64.tar.gz"
+      sha256 "ee34f2e2f194b038c11eddb684259eb77e6ed220693bf13eca68d585b7858db6"
 
       def install
         bin.install "azioncli"
@@ -37,8 +37,8 @@ class Azioncli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aziontech/azion-cli/releases/download/0.54.0/azioncli_0.54.0_Linux_arm64.tar.gz"
-      sha256 "9308865b5fb8238edacaba5694826069d8b861717296cda9c3c3cf1d3392fcab"
+      url "https://github.com/aziontech/azion-cli/releases/download/0.55.0/azioncli_0.55.0_Linux_arm64.tar.gz"
+      sha256 "6717c07f2a8ba7a6ead3ca9e295663a6143ec11e772a435f3378548aa0e23135"
 
       def install
         bin.install "azioncli"
@@ -48,8 +48,8 @@ class Azioncli < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aziontech/azion-cli/releases/download/0.54.0/azioncli_0.54.0_Linux_x86_64.tar.gz"
-      sha256 "218d203abe569ad8a838bf9472a7a54d0d3ea7f20e763bfd505ddbd2012af17e"
+      url "https://github.com/aziontech/azion-cli/releases/download/0.55.0/azioncli_0.55.0_Linux_x86_64.tar.gz"
+      sha256 "98bf094c5bdddaa23853fe35f6b5cf3c06a0ec683df4756a72dc1a4edc698d96"
 
       def install
         bin.install "azioncli"
