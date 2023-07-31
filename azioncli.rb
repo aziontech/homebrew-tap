@@ -5,14 +5,14 @@
 class Azioncli < Formula
   desc "The developer friendly way to interact with Azion"
   homepage "https://github.com/aziontech/azion-cli"
-  version "0.68.0"
+  version "0.69.0"
   license "MIT"
 
   depends_on "jq"
 
   on_macos do
-    url "https://github.com/aziontech/azion-cli/releases/download/0.68.0/azioncli_0.68.0_darwin_amd64.tar.gz"
-    sha256 "a3fb3cf95a397f55ec1ad72e5a9c4771278ec01f06287c78a4b7d6b2520f63a5"
+    url "https://github.com/aziontech/azion-cli/releases/download/0.69.0/azioncli_0.69.0_darwin_amd64.tar.gz"
+    sha256 "38c465661a69a23701cbe45b76610b76bbd2b73f55097eeb689cb1d0d2a84c38"
 
     def install
       bin.install "azioncli"
@@ -34,8 +34,8 @@ class Azioncli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/aziontech/azion-cli/releases/download/0.68.0/azioncli_0.68.0_linux_amd64.tar.gz"
-      sha256 "bd0e4ad5a1a9b41437e09fb47fbf6d1b22b98d713b8ce69dd996cb23d4f10e57"
+      url "https://github.com/aziontech/azion-cli/releases/download/0.69.0/azioncli_0.69.0_linux_amd64.tar.gz"
+      sha256 "fd3bb6f80c490d79605828d8f9e4ec990d7ffde0088eda4b09be78ec38d94b93"
 
       def install
         bin.install "azioncli"
