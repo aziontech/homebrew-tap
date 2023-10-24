@@ -5,15 +5,15 @@
 class Azion < Formula
   desc "Interact in a developer friendly way with Azion"
   homepage "https://github.com/aziontech/azion-cli"
-  version "1.5.0"
+  version "1.5.1"
   license "MIT"
 
   depends_on "jq"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aziontech/azion-cli/releases/download/1.5.0/azion_1.5.0_darwin_amd64.tar.gz"
-      sha256 "176342a418d5e5d954ed934d2938f20e43b099bef9a64e394361432a874a5766"
+      url "https://github.com/aziontech/azion-cli/releases/download/1.5.1/azion_1.5.1_darwin_amd64.tar.gz"
+      sha256 "efe05f723ad2bbf22d307de3287d81d3f347df4c8ddbad0b0d57793e867f9ba9"
 
       def install
         bin.install "azion"
@@ -23,8 +23,8 @@ class Azion < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aziontech/azion-cli/releases/download/1.5.0/azion_1.5.0_darwin_arm64.tar.gz"
-      sha256 "459e7c682819091489a389281ffa4ea18ccca1f6fd6db69cbcf860d3a181d3b6"
+      url "https://github.com/aziontech/azion-cli/releases/download/1.5.1/azion_1.5.1_darwin_arm64.tar.gz"
+      sha256 "87bb387808cf1a38f21e84ee7c69970c767c7938770789470e373268f60bbb24"
 
       def install
         bin.install "azion"
@@ -37,8 +37,8 @@ class Azion < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aziontech/azion-cli/releases/download/1.5.0/azion_1.5.0_linux_arm64.tar.gz"
-      sha256 "10a38432d8469a3bcaccdaa5aca56e515ece0a508bff39d61ced24b1ad970e47"
+      url "https://github.com/aziontech/azion-cli/releases/download/1.5.1/azion_1.5.1_linux_arm64.tar.gz"
+      sha256 "a18916b1fea8d51b7145236740356fd2695a717b8906ee191be9e87eb94d1ee8"
 
       def install
         bin.install "azion"
@@ -48,8 +48,8 @@ class Azion < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aziontech/azion-cli/releases/download/1.5.0/azion_1.5.0_linux_amd64.tar.gz"
-      sha256 "a8e15ad298651b550318ac58e97b2cf0a903059b5da0784e32eb902eea057963"
+      url "https://github.com/aziontech/azion-cli/releases/download/1.5.1/azion_1.5.1_linux_amd64.tar.gz"
+      sha256 "21c83168d5961f15ac31fb86943c2c549c4b6675cd698f69b963b4f8411ef73b"
 
       def install
         bin.install "azion"
@@ -61,6 +61,6 @@ class Azion < Formula
   end
 
   test do
-    system "#{bin}/azion --version"
+    system "#{bin}/azion", "--version"
   end
 end
