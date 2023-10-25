@@ -3,17 +3,11 @@ Homebrew tap repository that provides formulae for public Azion binaries, such a
 
 **Note:** the formula content of this repository is automatically generated.
 
-## Install
-To tap the repository and thus make all formulae available to subsequent `brew` commands:
-```
-brew tap aziontech/tap
-```
-
 To install individual formula:
 
 ### Azion CLI
 ```
-brew install aziontech/tap/azioncli
+brew install azion
 ```
 
 ## Issues
